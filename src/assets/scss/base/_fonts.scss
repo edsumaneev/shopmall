@@ -37,5 +37,4 @@ $font-weight: 400, $font-style: normal, $support-required: 'modern') {
 
 @include font-face("PTSans", "PTSans-Regular", "../fonts/PTSans-Regular", 400, "oldie");
 @include font-face("PTSans", "PTSans-Bold", "../fonts/PTSans-Bold", 700, "oldie");
-@include font-face("HelveticaNeueCyr", "HelveticaNeueCyr-Black", "../fonts/HelveticaNeueCyr-Black", 900, "oldie");
-@include font-face("HelveticaNeueCyr", "HelveticaNeueCyr-Bold", "../fonts/HelveticaNeueCyr-Bold", 700, "oldie");
+@include font-face("Roboto", "Roboto-Bold", "../fonts/Roboto-Bold", 700, "oldie");
