@@ -1,0 +1,30 @@
+.modal {
+    &__dialog {
+        @extend .modal-dialog;
+        @extend .modal-dialog-centered;
+    }
+
+    &__content {
+        @extend .modal-content;
+    }
+
+    &__body {
+        @extend .modal-body;
+    }
+
+    &__title {
+        @extend .modal-title;
+    }
+
+    &__close {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+
+        @include media-breakpoint-down(sm) {
+            top: 15px;
+            right: 15px;
+        }
+    }
+
+}

@@ -1,0 +1,60 @@
+{
+    "items": [{
+            "imgsrc": "assets/img/placeholder/blog1.jpg",
+            "title": "What will be fashionable in spring 2020"
+        },
+        {
+            "imgsrc": "assets/img/placeholder/blog2.jpg",
+            "title": "What will be fashionable in spring 2020"
+        },
+        {
+            "imgsrc": "assets/img/placeholder/blog3.jpg",
+            "title": "What will be fashionable in spring 2020"
+        }
+    ],
+    "products": [{
+        "imgsrc": "assets/img/placeholder/product1.jpg",
+        "title": "Зимнее пальто-кимоно",
+        "price": "15 000 р."
+    },
+    {
+        "imgsrc": "assets/img/placeholder/product2.jpg",
+        "title": "Зимнее пальто-кимоно",
+        "price": "15 000 р."
+    },
+    {
+        "imgsrc": "assets/img/placeholder/product3.jpg",
+        "title": "Зимнее пальто-кимоно"
+    },
+    {
+        "imgsrc": "assets/img/placeholder/product4.jpg",
+        "title": "Зимнее пальто-кимоно",
+        "price": "15 000 р."
+    },
+    {
+        "imgsrc": "assets/img/placeholder/product5.jpg",
+        "title": "Зимнее пальто-кимоно",
+        "price": "15 000 р."
+    },
+    {
+        "imgsrc": "assets/img/placeholder/product6.jpg",
+        "title": "Зимнее пальто-кимоно",
+        "price": "15 000 р."
+    },
+    {
+        "imgsrc": "assets/img/placeholder/product7.jpg",
+        "title": "Зимнее пальто-кимоно",
+        "price": "15 000 р."
+    },
+    {
+        "imgsrc": "assets/img/placeholder/product8.jpg",
+        "title": "Зимнее пальто-кимоно",
+        "price": "15 000 р."
+    },
+    {
+        "imgsrc": "assets/img/placeholder/product9.jpg",
+        "title": "Зимнее пальто-кимоно",
+        "price": "15 000 р."
+    }
+]
+}
