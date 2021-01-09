@@ -1,0 +1,31 @@
+.button {
+  // position: relative;
+  // z-index: 5;
+  box-sizing: border-box;
+  padding: rem(17px) rem(25px) rem(25px) rem(25px);
+
+  color: #333333;
+  font-family: "PTSans",
+    Arial,
+    sans-serif;
+  font-weight: 700;
+  font-size: rem(30px);
+
+  background: rgba(118, 189, 1, 0.85);
+  border: rem(1px) solid #333333;
+  border-radius: rem(25px);
+
+  box-shadow: 0 rem(10px) rem(25px) rgba(118, 189, 1, 0.38);
+}
+
+.button:hover {
+  background: rgba(118, 189, 1, 1);
+  box-shadow: 0 rem(5px) rem(25px) rgba(50, 50, 1, 0.5);
+
+  transition: ease-in-out 0.3s;
+}
+
+.button:focus,
+.button:active {
+  outline: none;
+}

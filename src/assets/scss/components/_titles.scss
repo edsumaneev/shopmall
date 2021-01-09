@@ -1,0 +1,26 @@
+.title {
+  padding: 0;
+  margin: 0;
+
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: rem(60px);
+  line-height: rem(60px);
+
+  @media(max-width: $width-sm) {
+    font-size: rem(25px);
+    line-height: rem(25px);
+  }
+}
+
+.title span {
+  color: #76b220;
+}
+
+.title--left {
+  margin-bottom: rem(25px);
+
+  // @media(max-width: $width-sm) {
+  //   width: 50%;
+  // }
+}

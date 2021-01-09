@@ -1,58 +1,79 @@
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    overflow-x: hidden;
+  overflow-x: hidden;
 
-    color: #333333;
-    font-family: "PTSans",
+  color: #333333;
+  font-family: "PTSans",
     Arial,
     sans-serif;
-    font-weight: 400;
-    font-size: rem(25px);
-    line-height: rem(32.35px);
+  font-weight: 400;
+  font-size: rem(25px);
+  line-height: rem(32.35px);
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  padding: 0;
+  margin: 0;
 }
 
 ul,
 ol {
-    margin: 0;
-    padding-inline-start: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
+  margin: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 a:hover {
-    color: blue;
-    text-decoration: none;
-    transition: ease-in 0.3s;
-    // text-shadow:2px 2px rgba($color: black, $alpha: 0.2);
+  color: blue;
+  text-decoration: none;
+  transition: ease-in 0.3s;
+  // text-shadow:2px 2px rgba($color: black, $alpha: 0.2);
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-    max-width: $width-max;
+  max-width: $width-max;
+@media(max-width: $width-sm) {
+  margin-left: rem(16px);
+  margin-right: rem(16px);
+  max-width: 100%;
+}
 }
 
 // #overlay {
