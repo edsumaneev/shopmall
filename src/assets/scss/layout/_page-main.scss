@@ -90,7 +90,28 @@
 // END .opportunities
 // START .description
 .description {
+  position: relative;
+  }
+
+  .description__wrapper {
+    display: flex;
+
   margin-bottom: rem(256px);
+}
+
+.description__img {
+  position: absolute;
+  left: rem(-320px);
+  // width: 35%;
+}
+
+.description__description {
+  margin-left: auto;
+  width: 75%;
+}
+
+.description__text {
+  margin-bottom: rem(42px);
 }
 
 // END .description
@@ -291,3 +312,129 @@
 }
 
 // END .client
+// START .subscribe
+.subscribe {
+  margin-bottom: rem(174px);
+}
+
+.subscribe__wrapper {
+  text-align: center;
+}
+
+.subscribe__title {
+  margin-bottom: rem(32px);
+}
+
+// END .subscribe
+// START .feedback
+
+.feedback {
+  margin: 0 auto;
+  max-width: rem(817px);
+}
+
+.feedback__col {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.feedback__col--top {
+  margin-bottom: rem(32px);
+}
+
+.feedback__col--top label {
+  margin-bottom: 0;
+}
+
+.feedback__radio {
+  margin-bottom: 10px;
+}
+
+.feedback__radio input[type=radio] {
+  display: none;
+}
+
+.feedback__col input {
+  padding: rem(20px) rem(42px);
+
+  border: rem(2px) solid #c6c6c6;
+  border-radius: rem(28px);
+}
+
+.feedback__col input::placeholder {
+  color: #c6c6c6;
+}
+
+.feedback__col input {
+  margin-bottom: rem(17px);
+}
+
+.feedback__col input[type=submit] {
+  margin: 0 auto;
+  margin-top: rem(30px);
+  width: rem(416px);
+}
+
+.feedback__col input:focus,
+.feedback__col input:active {
+  outline: none;
+}
+
+
+.feedback__radio label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  padding-left: rem(35px);
+  margin-right: 0;
+  user-select: none;
+}
+
+.feedback__radio label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: rem(25px);
+  height: rem(25px);
+  position: absolute;
+  left: 0;
+  bottom: rem(1px);
+  border: rem(2px) solid #c6c6c6;
+  border-radius: rem(10px);
+}
+
+.feedback__radio input[type=radio]:checked+label::before {
+  background-color: #9b9898;
+}
+
+// .feedback__radio label:hover:before {
+//   filter: brightness(120%);
+// }
+
+// END .feedback
+// START .review
+.review {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: rem(42px);
+}
+
+.review__title {
+  padding-right: 20%;
+  margin: 0 auto;
+  margin-bottom: rem(10px);
+  max-width: rem(888px);
+
+  text-align: left;
+}
+
+.review__button {
+  display: block;
+  margin: 0 auto;
+
+  min-width: rem(388px);
+}
+
+// END .review

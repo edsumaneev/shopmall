@@ -1,0 +1,33 @@
+.footer {
+  padding-top: rem(53px);
+  padding-bottom: rem(62px);
+
+  background-color: $bg-green;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+  max-width: rem(1251px);
+}
+
+.footer__logo {
+  padding: rem(10px);
+
+  border-radius: rem(17px);
+  background-color: #ffffff;
+}
+
+.footer__agreement {
+  display: flex;
+  flex-direction: column;
+
+  color: #ffffff;
+}
+
+.footer__agreement a:hover {
+  color: #3a05fb;
+  transition: ease-in-out 0.3s;
+}

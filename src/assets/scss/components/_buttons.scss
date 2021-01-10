@@ -19,6 +19,8 @@
 }
 
 .button:hover {
+  color: rgba($color: #333333, $alpha: 0.8);
+  //  color: #3a05fb;
   background: rgba(118, 189, 1, 1);
   box-shadow: 0 rem(5px) rem(25px) rgba(50, 50, 1, 0.5);
 

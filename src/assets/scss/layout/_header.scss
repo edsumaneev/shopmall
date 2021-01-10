@@ -13,7 +13,7 @@
   }
 }
 
-.header::before,
+// .header::before,
 .header::after {
   z-index: -1;
   position: absolute;
@@ -28,12 +28,12 @@
   object-fit: contain;
 }
 
-.header::before {
-  background: url("../img/bg/bg-header@1x.png");
-  left: -86.5%;
-  top: -40%;
-  transform: rotate(180deg);
-}
+// .header::before {
+//   background: url("../img/bg/bg-header@1x.png");
+//   left: -86.5%;
+//   top: -40%;
+//   transform: rotate(180deg);
+// }
 
 .header__wrapper {
   display: flex;
