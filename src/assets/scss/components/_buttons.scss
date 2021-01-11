@@ -2,7 +2,7 @@
   // position: relative;
   // z-index: 5;
   box-sizing: border-box;
-  padding: rem(17px) rem(25px) rem(25px) rem(25px);
+  padding: rem(20px) rem(25px) rem(23px) rem(25px);
 
   color: #333333;
   font-family: "PTSans",
@@ -16,6 +16,13 @@
   border-radius: rem(25px);
 
   box-shadow: 0 rem(10px) rem(25px) rgba(118, 189, 1, 0.38);
+@media(max-width: $width-sm) {
+  padding: rem(5px) rem(5px) rem(5px) rem(5px);
+  font-size: rem(16px);
+  line-height: rem(21px);
+
+  border-radius: rem(7.8px);
+}
 }
 
 .button:hover {

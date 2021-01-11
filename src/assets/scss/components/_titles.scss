@@ -9,7 +9,7 @@
 
   @media(max-width: $width-sm) {
     font-size: rem(25px);
-    line-height: rem(25px);
+    line-height: 100%;
   }
 }
 
@@ -20,7 +20,8 @@
 .title--left {
   margin-bottom: rem(25px);
 
-  // @media(max-width: $width-sm) {
-  //   width: 50%;
-  // }
+  @media(max-width: $width-sm) {
+    padding-right: rem(16px);
+    margin-bottom: rem(14px);
+  }
 }

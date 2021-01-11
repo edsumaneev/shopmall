@@ -71,8 +71,6 @@ a:hover {
 .container {
   max-width: $width-max;
 @media(max-width: $width-sm) {
-  margin-left: rem(16px);
-  margin-right: rem(16px);
   max-width: 100%;
 }
 }

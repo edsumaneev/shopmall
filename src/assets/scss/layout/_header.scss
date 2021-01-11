@@ -4,12 +4,14 @@
 
   max-width: 1913px;
   margin: 0 auto;
-  margin-bottom: rem(20px);
+  margin-bottom: rem(33px);
   min-height: rem(850px);
 
   @media(max-width: $width-sm) {
     padding-top: rem(20px);
     padding-left: 0;
+    margin-bottom: rem(216px);
+    min-height: auto;
   }
 }
 
@@ -26,6 +28,17 @@
   width: 100%;
   background-repeat: no-repeat;
   object-fit: contain;
+@media(max-width: rem(1440px)) {
+  top: 17.6%;
+  left: -1%;
+  }
+@media(max-width: $width-sm) {
+  min-height: rem(561px);
+  width: rem(1042px);
+  top: 13%;
+  left: -55%;
+  background: url("../img/bg/bg-header-mobile@1x.png");
+}
 }
 
 // .header::before {
@@ -44,15 +57,21 @@
   flex-direction: column;
   flex-basis: 60%;
 
-  margin-right: rem(83px);
+  margin-right: rem(88px);
+
+  @media(max-width: $width-sm) {
+    flex-basis: 100%;
+
+    margin-right: 0;
+  }
 }
 
 .header__logo {
   margin-bottom: rem(60px);
 
   @media(max-width: $width-sm) {
-    margin-bottom: rem(90px);
-
+    margin-bottom: rem(105px);
+    margin-left: rem(-21px);
     width: rem(102px);
     height: rem(69px);
 
@@ -64,12 +83,23 @@
   width: 100%;
   object-fit: contain;
   margin-right: rem(-217px);
+@media(max-width: $width-sm) {
+  display: none;
+}
 }
 
 .header__inner {
   padding-left: rem(110px);
+@media(max-width: $width-sm) {
+  padding-left: 0;
+}
 }
 
 .header__text {
   margin-bottom: rem(41px);
+@media(max-width: $width-sm) {
+  font-size: rem(14px);
+  line-height: 140%;
+  margin-bottom: rem(21px);
+  }
 }
