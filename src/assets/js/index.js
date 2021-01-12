@@ -3,17 +3,17 @@ require('slick-carousel');
 require('magnific-popup');
 
 window.addEventListener("DOMContentLoaded", function () {
-      function setCursorPosition(pos, elem) {
-        elem.focus();
-        if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
-        else if (elem.createTextRange) {
-          var range = elem.createTextRange();
-          range.collapse(true);
-          range.moveEnd("character", pos);
-          range.moveStart("character", pos);
-          range.select()
-        }
-      }
+  function setCursorPosition(pos, elem) {
+    elem.focus();
+    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+    else if (elem.createTextRange) {
+      var range = elem.createTextRange();
+      range.collapse(true);
+      range.moveEnd("character", pos);
+      range.moveStart("character", pos);
+      range.select()
+    }
+  }
 
   function template(event) {
     var matrix = "+7 (___) - ___ - __ - __",
@@ -36,15 +36,22 @@ window.addEventListener("DOMContentLoaded", function () {
     phoneForm.addEventListener("focus", template, false);
     phoneForm.addEventListener("blur", template, false);
   }
-  });
+});
 
-  $(".slider").slick({
-    slidesToShow: 1,
-    infinite: true,
-    autoplay: false,
-    touchThreshold: 100,
-    dots: true,
-    dotsClass: "slider__dots",
-    prevArrow: $(".slick-prev"),
-    nextArrow: $(".slick-next")
-  });
+$(".slider").slick({
+  slidesToShow: 1,
+  infinite: true,
+  autoplay: false,
+  touchThreshold: 100,
+  dots: true,
+  dotsClass: "slider__dots",
+  prevArrow: $(".slick-prev"),
+  nextArrow: $(".slick-next"),
+    responsive: [{
+      breakpoint: 450,
+      settings: {
+        prevArrow: false,
+        nextArrow: false
+      }
+    }]
+});
