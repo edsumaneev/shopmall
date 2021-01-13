@@ -11,7 +11,7 @@
       <div class="header__inner">
         <h1 class="title title--left"><span>PRO-аккаунт</span> к&nbsp;порталу ShopAndMall.ru</h1>
         <p class="header__text">для быстрого доступа к ритейлерам и оперативному закрытию сделок!</p>
-        <button class="button" type="button">Подключить PRO-аккаунт</button>
+        <a href="#form-popup" class="button show-popup" data-effect="mfp-zoom-in">Подключить PRO-аккаунт</a>
       </div>
     </div>
 
@@ -120,7 +120,7 @@
             </div>
           </li>
         </ol>
-        <button class="button advantage__button" type="button">Подключить PRO-аккаунт</button>
+        <a href="#form-popup" class="button advantage__button show-popup" data-effect="mfp-zoom-in">Подключить PRO-аккаунт</a>
       </div>
     </div>
   </section>
@@ -147,7 +147,8 @@
           Пользоваться Картой ТЦ и ТК России, а также фильтрами ритейлеров без каких&nbsp;-&nbsp;либо ограничений
         </li>
       </ol>
-      <button class="button opportunities__button" type="button">Подключить PRO-аккаунт</button>
+      <a href="#form-popup" class="button opportunities__button show-popup" data-effect="mfp-zoom-in">Подключить
+        PRO-аккаунт</a>
     </div>
   </section>
   <div class="description">
@@ -162,9 +163,11 @@
           зарабатывать быстро благодаря мгновенному доступу к базе данных и получать последнюю актуальную информацию на
           рынке — присоединяйтесь в&nbsp;закрытый&nbsp;клуб&nbsp;участников PRO-аккаунта!
         </p>
-        <button class="button description__button" type="button">Да, хочу присоединиться!</button>
-        <button class="button opportunities__button opportunities__button--mobile" type="button">Подключить
-          PRO-аккаунт</button>
+        <a href="#form-popup" class="button description__button show-popup" data-effect="mfp-zoom-in">Да, хочу
+          присоединиться!</a>
+        <a href="#form-popup" class="button opportunities__button opportunities__button--mobile show-popup"
+          data-effect="mfp-zoom-in">Подключить
+          PRO-аккаунт</a>
       </div>
     </div>
   </div>
@@ -282,10 +285,10 @@
               <td></td>
               <td></td>
               <td>
-                <button class="button tariffs__button" type="button">Оставить заявку</button>
+                <a href="#form-popup" class="button tariffs__button show-popup" data-effect="mfp-zoom-in">Оставить заявку</a>
               </td>
               <td>
-                <button class="button tariffs__button" type="button">Оставить заявку</button>
+                <a href="#form-popup" class="button tariffs__button show-popup" data-effect="mfp-zoom-in">Оставить заявку</a>
               </td>
             </tr>
           </tbody>
@@ -343,7 +346,7 @@
             </tbody>
           </table>
         </div>
-        <button class="button tariffs__button" type="button">Оставить заявку</button>
+        <a href="#form-popup" class="button tariffs__button show-popup" data-effect="mfp-zoom-in">Оставить заявку</a>
         </div>
         <div class="tariffs__mobile">
           <h3 class="tariffs__subtitle">PRO-аккаунт для юр.лица</h3>
@@ -397,7 +400,7 @@
               </tbody>
             </table>
           </div>
-          <button class="button tariffs__button" type="button">Оставить заявку</button>
+          <a href="#form-popup" class="button tariffs__button show-popup" data-effect="mfp-zoom-in">Оставить заявку</a>
         </div>
         </div>
   </section>
@@ -600,7 +603,7 @@
           stroke-linecap="round" />
       </svg>
     </button>
-    <button class="button review__button" type="button">Оформить подписку</button>
+    <a href="#form-popup" class="button review__button show-popup" data-effect="mfp-zoom-in">Оформить подписку</a>
   </section>
 </main>
 <footer class="footer">
@@ -614,4 +617,45 @@
     </div>
   </div>
 </footer>
+<!-- Magnific Popup -->
+<div id="form-popup" class="popup-form mfp-with-anim mfp-hide">
+  <div class="popup-form__logo">
+    <img src="assets/img/icons/logo.png" alt="logo" width="180" height="122">
+  </div>
+  <h2 class="title popup-form__title">Выберите вариант подписки</h2>
+  <form class="feedback popup-form__feedback" action="#">
+    <div class="feedback__col feedback__col--top popup-form__col popup-form__col--top">
+      <div class="feedback__radio">
+        <input type="radio" name="typeorder" id="individual" value="individual">
+        <label for="individual">Физическое лицо</label>
+      </div>
+      <div class="feedback__radio">
+        <input type="radio" name="typeorder" id="corporate" value="corporate">
+        <label for="corporate">Юридическое лицо</label>
+      </div>
+    </div>
+    <div class="feedback__col">
+      <input type="text" placeholder="Ваше имя" name="name">
+      <input class="feedback__tel" type="tel" placeholder="+7 ...." name="tel" id="popup-tel">
+      <input type="email" placeholder="Ваш email" name="email">
+      <input class="button feedback__button" type="submit" value="Оставить заявку">
+    </div>
+  </form>
+</div>
+<!-- END Magnific Popup -->
+<div id="popup" class="popup-form mfp-with-anim mfp-hide">
+  <div class="header__logo popup-form__logo">
+    <img src="assets/img/icons/logo.png" alt="logo" width="180" height="122">
+  </div>
+  <h2 class="title popup-form__title">Спасибо за регистрацию!</h2>
+  <p>
+    Мы получили Вашу заявку и обязательно ее обработаем в ближайшее рабочее время.
+  </p>
+  <p>
+    При отсутствии вопросов — вы можете сразу произвести оплату PRO-аккаунта и получить немедленный доступ ко всем
+    закрытым
+    функциям портала.
+  </p>
+</div>
+
 {% include "../templates/footer.njk" %}

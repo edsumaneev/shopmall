@@ -1,8 +1,11 @@
 .button {
   position: relative;
   z-index: 5;
+  display: inline-block;
+  vertical-align: middle;
   box-sizing: border-box;
-  padding: rem(20px) rem(25px) rem(23px) rem(25px);
+  padding: rem(20px) rem(22px) rem(23px) rem(22px);
+  max-width: rem(388px);
 
   color: #333333;
   font-family: "PTSans",
@@ -10,19 +13,20 @@
     sans-serif;
   font-weight: 700;
   font-size: rem(30px);
+  text-align: center;
 
   background: rgba(118, 189, 1, 0.85);
   border: rem(1px) solid #333333;
   border-radius: rem(25px);
 
   box-shadow: 0 rem(10px) rem(25px) rgba(118, 189, 1, 0.38);
-@media(max-width: $width-sm) {
-  padding: rem(5px) rem(5px) rem(5px) rem(5px);
-  font-size: rem(16px);
-  line-height: rem(21px);
+  @media(max-width: $width-sm) {
+    padding: rem(5px) rem(5px) rem(5px) rem(5px);
+    font-size: rem(16px);
+    line-height: rem(21px);
 
-  border-radius: rem(7.8px);
-}
+    border-radius: rem(7.8px);
+  }
 }
 
 .button:hover {
