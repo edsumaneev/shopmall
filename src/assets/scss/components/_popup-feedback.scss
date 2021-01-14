@@ -14,7 +14,7 @@
   }
 
   @media(max-width: $width-lg) {
-    padding: rem(50px) rem(30px) rem(70px);
+    padding: rem(60px) rem(30px) rem(70px);
   }
 
   @media(max-width: $width-sm) {
@@ -22,6 +22,60 @@
   }
 }
 
+.popup {
+  padding-bottom: rem(400px);
+  padding-left: rem(210px);
+  padding-right: rem(210px);
+
+  text-align: center;
+
+  background: url("../img/bg/bg-popup-thanks@1x.png") bottom center no-repeat;
+  background-size: cover;
+  background-color: #ffffff;
+
+  @media(max-width: $width-lg) {
+    padding-top: rem(150px);
+    padding-left: rem(30px);
+    padding-right: rem(30px);
+    padding-bottom: rem(100px);
+    background-position-y: 30%;
+  }
+
+  @media(max-width: $width-sm) {
+    padding-top: rem(80px);
+    padding-bottom: rem(200px);
+    padding-left: rem(30px);
+    padding-right: rem(30px);
+
+    background: url("../img/bg/bg-popup-thanks-mobile@1x.png") bottom right no-repeat;
+    // background-position-x: 0;
+    background-size: cover;
+    background-color: #ffffff;
+  }
+
+  @media(max-width: 320px) {
+    padding-left: 0;
+    padding-right: 0;
+
+    padding-top: rem(60px);
+    background-size: 265%;
+  }
+}
+
+.popup p {
+  padding-bottom: rem(42px);
+
+  text-shadow: 0 0 0.2em #ffffff;
+
+  @media(max-width: $width-sm) {
+    padding-bottom: 0;
+
+    font-size: rem(14px);
+    line-height: 160%;
+  }
+}
+
+.popup__logo,
 .popup-form__logo {
   position: absolute;
   top: rem(46px);
@@ -70,14 +124,28 @@
   }
 }
 
+.popup__logo {
+  @media(max-width: $width-lg) {
+    top: rem(20px);
+  }
+
+  @media(max-width: 320px) {
+    top: 0;
+    left: rem(-15px);
+  }
+}
+
 .popup-form__feedback {
   margin: 0;
   padding: 0;
   max-width: 100%;
 }
 
+.popup__title,
 .popup-form__title {
   margin-bottom: rem(32px);
+  
+  text-shadow: 0 0 0.2em #ffffff;
 
   @media(max-width: $width-xl) {
     font-size: rem(42px);
@@ -95,6 +163,12 @@
     line-height: rem(24px);
   }
 }
+
+  .popup__title {
+    @media(max-width: $width-sm) {
+      margin-bottom: rem(10px);
+    }
+  }
 
 .popup-form__col--top {
   @media(max-width: $width-lg) {
