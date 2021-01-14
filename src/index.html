@@ -37,7 +37,7 @@
                 <path
                   d="M67.8668 8.44505C65.0219 5.60035 60.3929 5.60035 57.548 8.44505L30.5994 35.3934L21.0463 25.8402C18.2015 22.9955 13.5725 22.9955 10.7276 25.8402C7.88278 28.685 7.88278 33.3141 10.7276 36.1589L27.1805 52.6118C28.1232 53.5544 29.3613 54.0257 30.5994 54.0257C31.8377 54.0257 33.0758 53.5544 34.0185 52.6118L67.8668 18.7635C70.7113 15.9188 70.7113 11.29 67.8668 8.44505ZM65.2218 16.1187L31.3734 49.9672C30.9468 50.3938 30.2523 50.3938 29.8257 49.9672L13.3729 33.5142C11.9864 32.1277 11.9864 29.872 13.3729 28.4856C14.066 27.7921 14.9764 27.4457 15.8871 27.4457C16.7978 27.4457 17.7084 27.7923 18.4014 28.4856L28.229 38.3132C28.8623 38.9463 29.7043 39.295 30.5996 39.295C31.4952 39.295 32.3373 38.9462 32.9704 38.313L60.1931 11.09C61.5792 9.70355 63.8353 9.70355 65.2218 11.09C66.6081 12.4765 66.6081 14.7322 65.2218 16.1187Z" />
               </svg>
-            </span>
+            </span> 
             <div>
               <h3 class="advantage__point">Доступ к ритейлерам</h3>
               <p class="advantage__text">
@@ -465,7 +465,7 @@
       <form class="feedback" action="#">
         <div class="feedback__col feedback__col--top">
           <div class="feedback__radio">
-            <input type="radio" name="typeorder" id="individual" value="individual">
+            <input type="radio" name="typeorder" id="individual" value="individual" checked>
             <label for="individual">Физическое лицо</label>
           </div>
           <div class="feedback__radio">
@@ -474,9 +474,9 @@
           </div>
         </div>
         <div class="feedback__col">
-          <input type="text" placeholder="Ваше имя" name="name">
-          <input class="feedback__tel" type="tel" placeholder="+7 ...." name="tel">
-          <input type="email" placeholder="Ваш email" name="email">
+          <input type="text" placeholder="Ваше имя" name="name" required>
+          <input class="feedback__tel" type="tel" placeholder="+7 ...." name="tel" required>
+          <input type="email" placeholder="Ваш email" name="email" required>
           <input class="button feedback__button" type="submit" value="Оставить заявку">
         </div>
       </form>
@@ -626,7 +626,7 @@
   <form class="feedback popup-form__feedback" action="#">
     <div class="feedback__col feedback__col--top popup-form__col popup-form__col--top">
       <div class="feedback__radio">
-        <input type="radio" name="typeorder" id="individual-popup" value="individual">
+        <input type="radio" name="typeorder" id="individual-popup" value="individual" checked>
         <label for="individual-popup">Физическое лицо</label>
       </div>
       <div class="feedback__radio">
@@ -635,9 +635,9 @@
       </div>
     </div>
     <div class="feedback__col">
-      <input type="text" placeholder="Ваше имя" name="name">
-      <input class="feedback__tel" type="tel" placeholder="+7 ...." name="tel" id="popup-tel">
-      <input type="email" placeholder="Ваш email" name="email">
+      <input type="text" placeholder="Ваше имя" name="name" required>
+      <input class="feedback__tel" type="tel" placeholder="+7 ...." name="tel" id="popup-tel" required>
+      <input type="email" placeholder="Ваш email" name="email" required>
       <input class="button feedback__button" type="submit" value="Оставить заявку">
     </div>
   </form> 

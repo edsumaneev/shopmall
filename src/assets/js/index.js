@@ -2,7 +2,34 @@ require('bootstrap');
 require('slick-carousel');
 require('magnific-popup');
 
+
+
 (function () {
+  jQuery(function () {
+    //E-mail Ajax Send
+    $('.js-form').on('submit', function (e) {
+      e.preventDefault();
+      var form = $(this);
+
+      $.ajax({
+        // url: 'mail.php',
+        url: '../../mail.php',
+        type: 'POST',
+        data: form.serialize(),
+      }).done(function () {
+        $.magnificPopup.open({
+          items: {
+            src: '#popup',
+            type: 'inline'
+          }
+        });
+
+        setTimeout(function () {
+          form.trigger('reset');
+        }, 1000);
+      });
+    });
+  });
   window.addEventListener("DOMContentLoaded", function () {
     function setCursorPosition(pos, elem) {
       elem.focus();
@@ -56,15 +83,15 @@ require('magnific-popup');
       }
     }]
   });
-// Magnific Popup
-$('.show-popup').magnificPopup({
-type: 'inline',
-removalDelay: 300,
-callbacks: {
-  beforeOpen: function () {
-    this.st.mainClass = this.st.el.attr('data-effect');
-  }  
-  }
-});
-// END Magnific Popup
+  // Magnific Popup
+  $('.show-popup').magnificPopup({
+    type: 'inline',
+    removalDelay: 300,
+    callbacks: {
+      beforeOpen: function () {
+        this.st.mainClass = this.st.el.attr('data-effect');
+      }
+    }
+  });
+  // END Magnific Popup
 })();
