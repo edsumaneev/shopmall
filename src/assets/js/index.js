@@ -7,12 +7,11 @@ require('magnific-popup');
 (function () {
   jQuery(function () {
     //E-mail Ajax Send
-    $('.js-form').on('submit', function (e) {
+    $('.feedback').on('submit', function (e) {
       e.preventDefault();
       var form = $(this);
 
       $.ajax({
-        // url: 'mail.php',
         url: '../../mail.php',
         type: 'POST',
         data: form.serialize(),

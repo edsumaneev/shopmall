@@ -30,6 +30,8 @@ function adopt($text)
 }
 
 $headers = "MIME-Version: 1.0" . PHP_EOL .
-  "Content-Type: text/html; charset=utf-8" . PHP_EOL;
+"Content-Type: text/html; charset=utf-8" . PHP_EOL .
+'From: ' . adopt(htmlspecialchars($_POST['name'])) . ' <' . htmlspecialchars($_POST['email']) . '>' . PHP_EOL .
+'Reply-To: ' . htmlspecialchars($_POST['email']) . '' . PHP_EOL;
 
 mail($admin_email, adopt($form_subject), $message, $headers);
