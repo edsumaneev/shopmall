@@ -1,6 +1,6 @@
 <?php
 
-$admin_email  = 'ed.woogie@gmail.com'; // имейл, на который отправляется форма
+$admin_email  = 'r_aycom@mail.ru'; // имейл, на который отправляется форма
 $form_subject = 'Сообщение с вашего сайта'; // тема письма
 
 $data = [
